@@ -77,7 +77,7 @@ Because this is a CLI App, there will be no need to deploy it to Heroku. This ti
 
 * Because screenshots (and well-written READMEs) are extremely important in the context of GitHub, this will be part of the grading.
 
-## Commit Early and Often
+## Commit Early and Ofte n
 
 One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
