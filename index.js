@@ -29,10 +29,10 @@ const quest = [
     {
         type:"input",
         name:"usage",
-        message: "Provide instructions and examples of your project in use for the Usage section."
+        message: "Provide the usage examples of your project."
     },
     {
-        type:"list",
+        type:"checkbox",
         name:"license",
         message: "What kind of license does your project have?",
         choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
@@ -45,7 +45,7 @@ const quest = [
     {
         type:"input",
         name:"tests",
-        message: "what command should be run to run tests?",
+        message: "Were there any test to run?",
     },
     {
         type:"input",
@@ -57,8 +57,8 @@ const quest = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(__dirname, fileName), data);
+function writeToFile(fileName, response) {
+    return fs.writeFileSync(path.join(__dirname, fileName), response);
 }
 
 // function to initialize program
